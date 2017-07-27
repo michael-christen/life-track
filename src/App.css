@@ -22,3 +22,10 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.square {
+  background: #444;
+  display: inline-block;
+  float: left;
+  border-radius: 5%;
+}
