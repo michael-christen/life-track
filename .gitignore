@@ -1,5 +1,13 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+# Django generated files
+*.py[co]
+.venv
+db.sqlite3
+
+
+# UI Files
+
 # dependencies
 /node_modules
 
