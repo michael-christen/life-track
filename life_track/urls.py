@@ -17,7 +17,13 @@ from django.conf.urls import include
 from django.conf.urls import url
 from django.contrib import admin
 
-urlpatterns = [
+
+api_patterns = [
     url(r'^timeline/', include('timeline.urls')),
+]
+
+
+urlpatterns = [
+    url(r'^api/', include(api_patterns)),
     url(r'^admin/', admin.site.urls),
 ]
