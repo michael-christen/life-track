@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import Grid from './Grid.js';
 import './App.css';
-import VisibleEventList from './containers/VisibleEventList';
+import VisibleEntryList from './containers/VisibleEntryList';
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Life Track</h2>
         </div>
-        <VisibleEventList />
+        <VisibleEntryList />
 				<div className="container">
 				<Grid height={12} width={31} />
 				<Grid height={4} width={7} />

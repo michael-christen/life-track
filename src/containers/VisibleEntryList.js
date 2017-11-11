@@ -1,11 +1,11 @@
 import { connect } from 'react-redux';
 
-import EventList from '../components/EventList';
+import EntryList from '../components/EntryList';
 
 
 const mapStateToProps = state => {
   return {
-    events: state.events,
+    entries: state.entries,
   };
 }
 
@@ -15,9 +15,9 @@ const mapDispatchToProps = dispatch => {
 }
 
 
-const VisibleEventList = connect(
+const VisibleEntryList = connect(
   mapStateToProps,
   mapDispatchToProps,
-)(EventList);
+)(EntryList);
 
-export default VisibleEventList;
+export default VisibleEntryList;

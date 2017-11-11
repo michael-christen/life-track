@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import thunkMiddleware from 'redux-thunk';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
@@ -9,13 +11,20 @@ import registerServiceWorker from './registerServiceWorker';
 import lifeTrackApp from './reducers';
 
 import {
-  updateEvents
+  updateEntries,
+  fetchEntries
 } from './actions';
 
+// Redux dev-tools
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 let store = createStore(
     lifeTrackApp,
-    // Redux dev-tools
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    composeEnhancers(
+      // Middleware
+      applyMiddleware(
+        thunkMiddleware,  // Lets us dispatch() functions
+      )
+    )
 );
 
 console.log(store.getState());
@@ -25,12 +34,13 @@ const unsubscribe = store.subscribe(() => {
   console.log(store.getState());
 });
 
-store.dispatch(updateEvents({1: {name: 'stuff'}}));
-store.dispatch(updateEvents({2: {name: 'other_stuff'}}));
-store.dispatch(updateEvents({
+store.dispatch(updateEntries({1: {name: 'stuff'}}));
+store.dispatch(updateEntries({2: {name: 'other_stuff'}}));
+store.dispatch(updateEntries({
   1: {name: 'stuff'},
   2: {name: 'other_stuff'},
 }));
+store.dispatch(fetchEntries('b', 'e', 'type'));
 
 unsubscribe();
 

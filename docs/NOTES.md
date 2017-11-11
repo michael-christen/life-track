@@ -13,3 +13,9 @@ table, but then you lose all of those nice functions like `add`, `create`, or `s
 - Model Inheritance: Create multiple implicit `OneToOneField`s. [Blog post](https://godjango.com/blog/django-abstract-base-class-multi-table-inheritance/)
 - [django-typed-models](https://github.com/craigds/django-typed-models)
 - [django-polymorphic](https://github.com/django-polymorphic/django-polymorphic)
+
+## Create React App & Django
+
+- [Using CORS & Production Settings](https://www.fusionbox.com/blog/detail/create-react-app-and-django/624/)
+- [Authentication](https://github.com/geezhawk/django-react-auth)
+- [Authentication Article](http://geezhawk.github.io/user-authentication-with-react-and-django-rest-framework)

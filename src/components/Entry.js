@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const Event = ({ name }) => (
+const Entry = ({ name }) => (
   <li>{name}</li>
 );
 
-Event.propTypes = {
+Entry.propTypes = {
   name: PropTypes.string.isRequired,
 };
 
-export default Event;
+export default Entry;
