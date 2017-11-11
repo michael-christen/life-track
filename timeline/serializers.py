@@ -3,17 +3,19 @@ from django.contrib.auth.models import User
 
 from rest_framework import serializers
 
-from .models import Event
+from .models import Summary
+from .models import Link
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
-    events = serializers.HyperlinkedRelatedField(
+    # TODO: HyperlinkedRelatedField
+    summaries = serializers.PrimaryKeyRelatedField(
         many=True,
-        queryset=Event.objects.all())
+        queryset=Summary.objects.all())
 
     class Meta:
         model = User
-        fields = ('url', 'username', 'email', 'events', 'groups')
+        fields = ('url', 'username', 'email', 'summaries', 'groups')
 
 
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
@@ -22,7 +24,13 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('url', 'name')
 
 
-class EventSerializer(serializers.HyperlinkedModelSerializer):
+class SummarySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Event
-        fields = ('url', 'owner', 'name', 'description', 'day')
+        model = Summary
+        fields = ('url', 'rating', 'title', 'begin', 'end', 'description')
+
+
+class LinkSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Link
+        fields = ('url', 'title', 'date', 'owner', 'path')

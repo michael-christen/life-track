@@ -10,7 +10,8 @@ from . import views
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
-router.register(r'events', views.EventViewSet)
+router.register(r'summaries', views.SummaryViewSet)
+router.register(r'links', views.LinkViewSet)
 
 urlpatterns = [
     url(r'^schema/$', schema_view),

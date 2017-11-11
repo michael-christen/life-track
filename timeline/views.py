@@ -1,10 +1,17 @@
+"""REST Framework Viewsets for timeline.
+
+TODO:
+    - Remove generic User/Group ViewSets
+"""
 from django.contrib.auth.models import Group
 from django.contrib.auth.models import User
 from rest_framework import viewsets
 
-from .models import Event
-from .serializers import EventSerializer
+from .models import Summary
+from .models import Link
 from .serializers import GroupSerializer
+from .serializers import LinkSerializer
+from .serializers import SummarySerializer
 from .serializers import UserSerializer
 
 
@@ -22,8 +29,15 @@ class GroupViewSet(viewsets.ModelViewSet):
     serializer_class = GroupSerializer
 
 
-class EventViewSet(viewsets.ModelViewSet):
-    """API endpoint that allows events to be viewed or edited.
+class SummaryViewSet(viewsets.ModelViewSet):
+    """API endpoint that allows summaries to be viewed or edited.
     """
-    queryset = Event.objects.all()
-    serializer_class = EventSerializer
+    queryset = Summary.objects.all()
+    serializer_class = SummarySerializer
+
+
+class LinkViewSet(viewsets.ModelViewSet):
+    """API endpoint that allows links to be viewed or edited.
+    """
+    queryset = Link.objects.all()
+    serializer_class = LinkSerializer
