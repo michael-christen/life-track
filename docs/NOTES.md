@@ -19,3 +19,12 @@ table, but then you lose all of those nice functions like `add`, `create`, or `s
 - [Using CORS & Production Settings](https://www.fusionbox.com/blog/detail/create-react-app-and-django/624/)
 - [Authentication](https://github.com/geezhawk/django-react-auth)
 - [Authentication Article](http://geezhawk.github.io/user-authentication-with-react-and-django-rest-framework)
+
+## Testing Redux
+
+- [Testing Components that use Redux](https://hackernoon.com/how-to-snapshot-test-everything-in-your-redux-app-with-jest-fde305ebedea)
+- [Jest & Enzyme for Redux](https://medium.com/netscape/testing-a-react-redux-app-using-jest-and-enzyme-b349324803a9)
+- [Testing Redux Foundations](https://github.com/reactjs/redux/blob/master/docs/recipes/WritingTests.md)
+using [redux-mock-store](https://github.com/arnaudbenard/redux-mock-store) and
+[fetch-mock](http://www.wheresrhys.co.uk/fetch-mock/).
+- [Testing Redux Step-by-Step](https://hackernoon.com/redux-testing-step-by-step-a-simple-methodology-for-testing-business-logic-8901670756ce)
