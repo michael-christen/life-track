@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-import { UPDATE_ENTRIES } from './actions';
+import { RECEIVE_ENTRIES, UPDATE_ENTRIES } from './actions';
 
 
 const INITIAL_SELECTION = {
@@ -31,6 +31,7 @@ function summaries(state = {}, action) {
 function entries(state = {}, action) {
   switch (action.type) {
     case UPDATE_ENTRIES:
+    case RECEIVE_ENTRIES:
       return action.entries;
       // TODO: Actually update instead of overwriting
       /*

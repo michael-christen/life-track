@@ -30,9 +30,14 @@ export function requestEntries(begin, end, entryType) {
 export function receiveEntries(json) {
   // TODO: Parse json properly
   console.log(json);
+  let entryDict = {};
+  // TODO: Maybe use id instead of date here
+  json.results.map(result => {
+    entryDict[result.date] = result;
+  });
   return {
     type: RECEIVE_ENTRIES,
-    entries: json.results.map(result => result),
+    entries: entryDict,
     receivedAt: Date.now(),
   };
 }
