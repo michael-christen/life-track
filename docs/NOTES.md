@@ -28,3 +28,7 @@ table, but then you lose all of those nice functions like `add`, `create`, or `s
 using [redux-mock-store](https://github.com/arnaudbenard/redux-mock-store) and
 [fetch-mock](http://www.wheresrhys.co.uk/fetch-mock/).
 - [Testing Redux Step-by-Step](https://hackernoon.com/redux-testing-step-by-step-a-simple-methodology-for-testing-business-logic-8901670756ce)
+
+
+## Django / DRF Filtering
+- [django-filter](https://django-filter.readthedocs.io/en/master/guide/rest_framework.html)

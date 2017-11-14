@@ -11,7 +11,7 @@ router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
 router.register(r'summaries', views.SummaryViewSet)
-router.register(r'links', views.LinkViewSet)
+router.register(r'links', views.LinkViewSet, base_name='link')
 
 urlpatterns = [
     url(r'^schema/$', schema_view),
