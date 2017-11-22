@@ -30,6 +30,8 @@ class Summary(models.Model):
     # TODO: Add validation 1-10
     rating = models.PositiveSmallIntegerField()
 
+    owner = models.ForeignKey(User, null=True, related_name='summaries')
+
     # TODO: Add validation (begin <= end)
     begin = models.DateField(default=datetime.date.today)
     end = models.DateField(default=datetime.date.today)

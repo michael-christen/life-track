@@ -31,8 +31,9 @@ export function receiveEntries(json) {
   // TODO: Parse json properly
   console.log(json);
   let entryDict = {};
-  // TODO: Maybe use id instead of date here
+  // eslint-disable-next-line
   json.results.map(result => {
+    // TODO: Maybe use id instead of date here
     entryDict[result.date] = result;
   });
   return {
