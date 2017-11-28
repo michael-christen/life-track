@@ -12,7 +12,7 @@ const Grid = (props) => {
 			paddingBottom: `${percentage}%`,
 			margin: `${margin}%`,
 		};
-		blocks.push(<div className='square' style={style}>
+		blocks.push(<div className='square' style={style} key={`block-${i}`}>
           <img src="https://instagram.fsnc1-1.fna.fbcdn.net/t51.2885-15/e35/23498153_1869512336695645_9040460074186702848_n.jpg" alt="fake"/>
           <div className='rating'></div>
         </div>);

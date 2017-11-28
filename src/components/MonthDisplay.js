@@ -26,7 +26,7 @@ const MonthDisplay = (props) => {
       margin: `${margin}%`,
       visibility: 'hidden',
     };
-    blocks.push(<div className='square' style={style}></div>);
+    blocks.push(<div className='square' style={style} key={`-${i}`}></div>);
   }
   for (let i = 1; i <= numDays; ++i) {
     const rawPercentage = 100.0 / width;
@@ -37,8 +37,9 @@ const MonthDisplay = (props) => {
       paddingBottom: `${percentage}%`,
       margin: `${margin}%`,
     };
+    const date = `${props.year}-${props.month}-${i}`;
     blocks.push(
-        <div className='square' style={style}>
+        <div className='square' style={style} key={date}>
           <p style={{position: 'absolute', color: 'white', top: '50%', left: '50%'}}>{i}</p>
         </div>);
   }
