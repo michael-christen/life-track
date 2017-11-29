@@ -1,0 +1,1475 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Entry with just name 1`] = `
+<div
+  className="square"
+  style={
+    Object {
+      "background": "#838",
+      "margin": "0.5%",
+      "paddingBottom": "10%",
+      "width": "10%",
+    }
+  }
+>
+  <img
+    alt="Entry Name: 2017-01-01"
+    src="/path.png"
+  />
+</div>
+`;
+
+exports[`Storyshots MonthDisplay February 2017 1`] = `
+<div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "visibility": "hidden",
+        "width": "12.857142857142858%",
+      }
+    }
+  />
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "visibility": "hidden",
+        "width": "12.857142857142858%",
+      }
+    }
+  />
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      1
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      2
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      3
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      4
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      5
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      6
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      7
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      8
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      9
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      10
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      11
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      12
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      13
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      14
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      15
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      16
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      17
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      18
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      19
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      20
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      21
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      22
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      23
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      24
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      25
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      26
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      27
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      28
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots MonthDisplay January 2017 1`] = `
+<div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "visibility": "hidden",
+        "width": "12.857142857142858%",
+      }
+    }
+  />
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "visibility": "hidden",
+        "width": "12.857142857142858%",
+      }
+    }
+  />
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "visibility": "hidden",
+        "width": "12.857142857142858%",
+      }
+    }
+  />
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "visibility": "hidden",
+        "width": "12.857142857142858%",
+      }
+    }
+  />
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "visibility": "hidden",
+        "width": "12.857142857142858%",
+      }
+    }
+  />
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "visibility": "hidden",
+        "width": "12.857142857142858%",
+      }
+    }
+  />
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      1
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      2
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      3
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      4
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      5
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      6
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      7
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      8
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      9
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      10
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      11
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      12
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      13
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      14
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      15
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      16
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      17
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      18
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      19
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      20
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      21
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      22
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      23
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      24
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      25
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      26
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      27
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      28
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      29
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      30
+    </p>
+  </div>
+  <div
+    className="square"
+    style={
+      Object {
+        "margin": "0.7142857142857143%",
+        "paddingBottom": "12.857142857142858%",
+        "width": "12.857142857142858%",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "color": "white",
+          "left": "50%",
+          "position": "absolute",
+          "top": "50%",
+        }
+      }
+    >
+      31
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,11 @@
+language: python
+install:
+    - pip install pipenv
+    - pipenv install
+    - npm install
+script:
+    - pipenv check
+    - pipenv run flake8 life_track
+    - pipenv run python manage.py test
+    - npm run build
+    - npm run test
