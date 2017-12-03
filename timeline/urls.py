@@ -3,9 +3,9 @@ from django.conf.urls import url
 from rest_framework import routers
 from rest_framework.schemas import get_schema_view
 
-schema_view = get_schema_view(title='Timeline API')
-
 from . import views
+
+schema_view = get_schema_view(title='Timeline API')
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
