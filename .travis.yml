@@ -5,7 +5,7 @@ install:
     - npm install
 script:
     - pipenv check
-    - pipenv run flake8 life_track
+    - pipenv run flake8 life_track timeline --exclude=migrations
     - pipenv run python manage.py test
     - npm run build
     - npm run test
