@@ -66,7 +66,17 @@ class Link(_Entry):
         return '{} [{}]'.format(super(Link, self).__unicode__(), self.path)
 
 
+class ActivityQuerySet(models.QuerySet):
+    def with_duration(self):
+        duration = models.ExpressionWrapper(
+            models.F('end') - models.F('start'),
+            output_field=models.fields.DurationField())
+        return self.annotate(duration=duration)
+
+
 class Activity(models.Model):
+    objects = ActivityQuerySet.as_manager()
+
     user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='activities')
 
     type = models.CharField(max_length=MAX_NAME_LENGTH)
@@ -79,7 +89,6 @@ class Activity(models.Model):
 
     start = models.DateTimeField()
     end = models.DateTimeField()
-
 
 
 # TODO: Add Support for photos, statistics
