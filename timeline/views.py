@@ -11,10 +11,12 @@ from rest_framework import viewsets
 
 from .models import Summary
 from .models import Link
+from .models import Activity
 from .serializers import GroupSerializer
 from .serializers import LinkSerializer
 from .serializers import SummarySerializer
 from .serializers import UserSerializer
+from .serializers import ActivitySerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -62,3 +64,13 @@ class LinkViewSet(viewsets.ModelViewSet):
         # if unique:
         #     queryset = queryset.distinct('date')
         return queryset
+
+
+class ActivityViewSet(viewsets.ModelViewSet):
+    serializer_class = ActivitySerializer
+
+    def get_queryset(self):
+        user = self.request.user
+        if user.is_anonymous:
+            return Activity.objects.none()
+        return Activity.objects.filter(user=user)
