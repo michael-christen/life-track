@@ -75,6 +75,8 @@ class Activity(models.Model):
     sub_category = models.CharField(max_length=MAX_NAME_LENGTH)
     project = models.CharField(max_length=MAX_NAME_LENGTH)
 
+    description = models.TextField()
+
     start = models.DateTimeField()
     end = models.DateTimeField()
 
