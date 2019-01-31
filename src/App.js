@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import logo from './logo.svg';
 import Grid from './Grid.js';
 import MonthDisplay from './components/MonthDisplay.js';
+import VisibleActivityTable from './containers/VisibleActivityTable.js';
 import './App.css';
 // TODO: Add back & support testing
 import VisibleEntryList from './containers/VisibleEntryList';
@@ -33,6 +34,7 @@ class App extends Component {
           </div>
         );
       }
+	  content = <VisibleActivityTable />;
       return (
       <div className="App">
         <div className="App-header">

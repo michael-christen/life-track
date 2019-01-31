@@ -13,7 +13,9 @@ import lifeTrackApp from './reducers';
 
 import {
   updateEntries,
-  fetchEntries
+  updateActivities,
+  fetchEntries,
+  fetchActivities,
 } from './actions';
 
 // Redux dev-tools
@@ -48,6 +50,45 @@ store.dispatch(updateEntries({
   },
 }));
 store.dispatch(fetchEntries('b', 'e', 'type'));
+store.dispatch(updateActivities([
+    {
+        "type": "self-balancing-robot",
+        "role": "Personal",
+        "category": "",
+        "sub_category": "",
+        "project": "",
+        "start": new Date("2018-10-31T16:45:00Z"),
+        "end": new Date("2018-10-31T17:15:00Z"),
+    },
+    {
+        "type": "Website Cleanup",
+        "role": "Work",
+        "category": "",
+        "sub_category": "",
+        "project": "",
+        "start": new Date("2018-10-31T18:15:00Z"),
+        "end": new Date("2018-10-31T18:35:38Z")
+    },
+    {
+        "type": "Documentation",
+        "role": "Work",
+        "category": "",
+        "sub_category": "",
+        "project": "",
+        "start": new Date("2018-10-31T18:35:00Z"),
+        "end": new Date("2018-10-31T18:51:16Z")
+    },
+    {
+        "type": "Tools",
+        "role": "Work",
+        "category": "",
+        "sub_category": "",
+        "project": "",
+        "start": new Date("2018-10-31T18:55:00Z"),
+        "end": new Date("2018-10-31T19:47:16Z")
+    },
+]));
+store.dispatch(fetchActivities());
 
 unsubscribe();
 
