@@ -5,6 +5,7 @@ from rest_framework import serializers
 
 from .models import Summary
 from .models import Link
+from .models import Activity
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
@@ -34,3 +35,11 @@ class LinkSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Link
         fields = ('url', 'title', 'date', 'owner', 'path')
+
+
+class ActivitySerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Activity
+        fields = ('type', 'role', 'category', 'sub_category', 'project',
+                  'start', 'end',
+                  )

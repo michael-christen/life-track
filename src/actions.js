@@ -7,6 +7,8 @@ export const UPDATE_ENTRIES = 'UPDATE_ENTRIES';
 export const REQUEST_ENTRIES = 'REQUEST_ENTRIES';
 export const RECEIVE_ENTRIES = 'RECEIVE_ENTRIES';
 
+export const UPDATE_ACTIVITIES = 'UPDATE_ACTIVITIES';
+
 
 /* Action Creators
  *
@@ -14,6 +16,11 @@ export const RECEIVE_ENTRIES = 'RECEIVE_ENTRIES';
 
 export function updateEntries(entries) {
   return { type: UPDATE_ENTRIES, entries };
+}
+
+
+export function updateActivities(activities) {
+  return { type: UPDATE_ACTIVITIES, payload: activities };
 }
 
 
@@ -51,5 +58,14 @@ export function fetchEntries(begin, end, entryType) {
     return fetch('/api/timeline/links/')
       .then(response => response.json())
       .then(json => dispatch(receiveEntries(json)));
+  }
+}
+
+
+export function fetchActivities() {
+  return function(dispatch) {
+	return fetch('/api/timeline/activities/?limit=1000')
+	  .then(response => response.json())
+	  .then(json => dispatch(updateActivities(json['results'])));
   }
 }

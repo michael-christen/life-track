@@ -2,8 +2,8 @@ from __future__ import unicode_literals
 
 import datetime
 
-from django.contrib.auth.models import User
 from django.db import models
+from django.conf import settings
 
 
 MAX_NAME_LENGTH = 256
@@ -30,7 +30,8 @@ class Summary(models.Model):
     # TODO: Add validation 1-10
     rating = models.PositiveSmallIntegerField()
 
-    owner = models.ForeignKey(User, null=True, related_name='summaries')
+    owner = models.ForeignKey(settings.AUTH_USER_MODEL,
+                              null=True, related_name='summaries')
 
     # TODO: Add validation (begin <= end)
     begin = models.DateField(default=datetime.date.today)
@@ -48,7 +49,8 @@ class _Entry(models.Model):
     title = models.CharField(max_length=MAX_NAME_LENGTH)
     # TODO: Maybe don't add defaults
     date = models.DateField(default=datetime.date.today)
-    owner = models.ForeignKey(User, null=True, related_name='entries')
+    owner = models.ForeignKey(settings.AUTH_USER_MODEL,
+                              null=True, related_name='entries')
 
     class Meta:
         abstract = True
@@ -62,6 +64,31 @@ class Link(_Entry):
 
     def __unicode__(self):
         return '{} [{}]'.format(super(Link, self).__unicode__(), self.path)
+
+
+class ActivityQuerySet(models.QuerySet):
+    def with_duration(self):
+        duration = models.ExpressionWrapper(
+            models.F('end') - models.F('start'),
+            output_field=models.fields.DurationField())
+        return self.annotate(duration=duration)
+
+
+class Activity(models.Model):
+    objects = ActivityQuerySet.as_manager()
+
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='activities')
+
+    type = models.CharField(max_length=MAX_NAME_LENGTH)
+    role = models.CharField(max_length=MAX_NAME_LENGTH)
+    category = models.CharField(max_length=MAX_NAME_LENGTH)
+    sub_category = models.CharField(max_length=MAX_NAME_LENGTH)
+    project = models.CharField(max_length=MAX_NAME_LENGTH)
+
+    description = models.TextField()
+
+    start = models.DateTimeField()
+    end = models.DateTimeField()
 
 
 # TODO: Add Support for photos, statistics

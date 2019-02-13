@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 
 import { RECEIVE_ENTRIES, UPDATE_ENTRIES } from './actions';
+import { UPDATE_ACTIVITIES } from './actions';
 
 
 const INITIAL_SELECTION = {
@@ -33,7 +34,7 @@ function entries(state = {}, action) {
     case UPDATE_ENTRIES:
     case RECEIVE_ENTRIES:
       return action.entries;
-      // TODO: Actually update instead of overwriting
+      // Actually update instead of overwriting
       /*
       return Object.assign({}, state, {
         entries: action.entries
@@ -45,10 +46,21 @@ function entries(state = {}, action) {
 }
 
 
+function activities(state = [], action) {
+  switch (action.type) {
+    case UPDATE_ACTIVITIES:
+	  return action.payload;
+    default:
+      return state;
+  }
+}
+
+
 const lifeTrackApp = combineReducers({
   entries,
   summaries,
   dateSelection,
+  activities,
 });
 
 
