@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch, NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import logo from './logo.svg';
@@ -12,44 +13,50 @@ import VisibleEntryList from './containers/VisibleEntryList';
 
 class App extends Component {
   render() {
+	  return (
+        <div className="App">
+          <div className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+            <h2>Life Track</h2>
+          </div>
+	      <div>
+	        <ul>
+	          <li>
+	        	<NavLink to="/">Home</NavLink>
+	          </li>
+	          <li>
+	        	<NavLink to="/input">Input</NavLink>
+	          </li>
+	        </ul>
+	        <hr />
+            <Switch>
+              <Route path="/month/:year/:month" component={MonthDisplayContainer} />
+              <Route path="/input" component={ActivityInput} />
+              <Route path="/" component={VisibleActivityTable} />
+            </Switch>
+	      </div>
+        </div>
+	  );
+  }
+}
+
+// Deprecated Views
+class MonthDisplayContainer extends Component {
+  render() {
       // TODO: Add checking around year and month
       const year = this.props.match.params['year'];
       const month = this.props.match.params['month'] - 1;
       let content = null;
-      if (year !== undefined && month !== undefined) {
-        content = (
-          <div className="container">
-            <MonthDisplay year={year} month={month} />
-          </div>
-        );
-      } else {
-        content = (
-          <div>
-		    <div className="container">
-              <VisibleEntryList />
-            </div>
-		    <div className="container">
-              <Grid height={12} width={31} />
-              <Grid height={4} width={7} />
-            </div>
-          </div>
-        );
-      }
-	  content = <VisibleActivityTable />;
       return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Life Track</h2>
+        <div className="container">
+          <MonthDisplay year={year} month={month} />
         </div>
-		<ActivityInput endpoint="/api/timeline/activities/" />
-        {content}
-      </div>
-    );
+      );
   }
-}
+};
 
-App.propTypes = {
+
+MonthDisplayContainer.propTypes = {
   match: PropTypes.shape({
     path: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
@@ -62,5 +69,23 @@ App.propTypes = {
     search: PropTypes.string.isRequired,
   }).isRequired,
 };
+
+
+class EntryListContainer extends Component {
+  render() {
+      return (
+        <div>
+  	      <div className="container">
+              <VisibleEntryList />
+		  </div>
+  	      <div className="container">
+              <Grid height={12} width={31} />
+              <Grid height={4} width={7} />
+		  </div>
+        </div>
+      );
+  }
+};
+
 
 export default App;

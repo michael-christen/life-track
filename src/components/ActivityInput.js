@@ -29,7 +29,11 @@ class ActivityInput extends Component {
 			body: JSON.stringify(lead),
 			headers: new Headers({"Content-Type": "application/json" }),
 		};
-		fetch(this.props.endpoint, conf).then(response => console.log(response));
+		// TODO: Deal with errors
+		fetch("/api/timeline/activities/", conf).then((response) => {
+			console.log(response);
+			this.props.history.push('/');
+		});
 	};
 
 	render() {
@@ -128,7 +132,6 @@ class ActivityInput extends Component {
 }
 
 ActivityInput.propTypes = {
-	endpoint: PropTypes.string.isRequired,
 };
 
 export default ActivityInput;

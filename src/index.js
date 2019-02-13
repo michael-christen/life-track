@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import thunkMiddleware from 'redux-thunk';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, NavLink } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import './index.css';
@@ -95,10 +95,7 @@ unsubscribe();
 ReactDOM.render(
   <Provider store={store}>
     <Router>
-      <Switch>
-        <Route path="/month/:year/:month" component={App} />
-        <Route path="/" component={App} />
-      </Switch>
+	  <App />
     </Router>
   </Provider>,
   document.getElementById('root'));
