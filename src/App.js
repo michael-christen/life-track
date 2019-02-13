@@ -5,6 +5,7 @@ import logo from './logo.svg';
 import Grid from './Grid.js';
 import MonthDisplay from './components/MonthDisplay.js';
 import VisibleActivityTable from './containers/VisibleActivityTable.js';
+import ActivityInput from './components/ActivityInput.js';
 import './App.css';
 // TODO: Add back & support testing
 import VisibleEntryList from './containers/VisibleEntryList';
@@ -41,6 +42,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Life Track</h2>
         </div>
+		<ActivityInput endpoint="/api/timeline/activities/" />
         {content}
       </div>
     );

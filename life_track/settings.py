@@ -129,6 +129,9 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
         # 'rest_framework.permissions.IsAdminUser',
     ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'life_track.authentication.MockAuthentication',
+    ],
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',  # noqa
     'PAGE_SIZE': 10,
     # TODO: Consider adding default filter back

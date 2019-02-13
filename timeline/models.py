@@ -81,9 +81,10 @@ class Activity(models.Model):
 
     type = models.CharField(max_length=MAX_NAME_LENGTH)
     role = models.CharField(max_length=MAX_NAME_LENGTH)
-    category = models.CharField(max_length=MAX_NAME_LENGTH)
-    sub_category = models.CharField(max_length=MAX_NAME_LENGTH)
-    project = models.CharField(max_length=MAX_NAME_LENGTH)
+    category = models.CharField(max_length=MAX_NAME_LENGTH, blank=True)
+    sub_category = models.CharField(max_length=MAX_NAME_LENGTH,
+                                    blank=True)
+    project = models.CharField(max_length=MAX_NAME_LENGTH, blank=True)
 
     description = models.TextField()
 
