@@ -41,5 +41,5 @@ class ActivitySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Activity
         fields = ('type', 'role', 'category', 'sub_category', 'project',
-                  'start', 'end',
+                  'start', 'end', 'description',
                   )

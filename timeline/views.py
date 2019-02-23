@@ -8,6 +8,7 @@ from django.contrib.auth.models import Group
 from django.contrib.auth.models import User
 from django_filters import rest_framework as filters
 from rest_framework import viewsets
+from rest_framework import exceptions
 
 from .models import Summary
 from .models import Link
@@ -74,3 +75,10 @@ class ActivityViewSet(viewsets.ModelViewSet):
         if user.is_anonymous:
             return Activity.objects.none()
         return Activity.objects.filter(user=user)
+
+    def perform_create(self, serializer):
+        user = self.request.user
+        print user
+        if user.is_anonymous:
+            raise exceptions.AuthenticationFailed('Require user')
+        serializer.save(user=self.request.user)
