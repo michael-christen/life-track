@@ -1,12 +1,10 @@
 import React from 'react';
 import {Component} from 'react';
 import PropTypes from 'prop-types';
-import { padNumber } from '../utils/DateUtils';
+import moment from 'moment';
 
 function getCurrentTimeString() {
-	const d = new Date();
-	return d.getFullYear() + "-" + padNumber((d.getMonth() + 1)) + "-" + padNumber(d.getDate()) +
-				"T" + padNumber(d.getHours()) + ":" + padNumber(d.getMinutes());
+	return moment(new Date()).format("YYYY-MM-DDTHH:mm");
 }
 
 // TODO: Possibly use const... behavior
