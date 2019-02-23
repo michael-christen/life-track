@@ -1,6 +1,13 @@
 import React from 'react';
 import {Component} from 'react';
 import PropTypes from 'prop-types';
+import { padNumber } from '../utils/DateUtils';
+
+function getCurrentTimeString() {
+	const d = new Date();
+	return d.getFullYear() + "-" + padNumber((d.getMonth() + 1)) + "-" + padNumber(d.getDate()) +
+				"T" + padNumber(d.getHours()) + ":" + padNumber(d.getMinutes());
+}
 
 // TODO: Possibly use const... behavior
 // TODO: Incorporate w/ Redux
@@ -11,13 +18,21 @@ class ActivityInput extends Component {
 		category: "",
 		sub_category: "",
 		project: "",
-		start: "",
-		end: "",
+		start: getCurrentTimeString(),
+		end: getCurrentTimeString(),
 		description: "",
 	};
 
 	handleChange = e => {
 		this.setState({ [e.target.name]: e.target.value });
+	};
+
+	updateStart = e => {
+		this.setState({ ['start']: getCurrentTimeString() });
+	};
+
+	updateEnd = e => {
+		this.setState({ ['end']: getCurrentTimeString() });
 	};
 
 	handleSubmit = e => {
@@ -83,6 +98,7 @@ class ActivityInput extends Component {
 			  </div>
 			  <div className="field">
 				<label className="label">Start</label>
+				<span className="btn btn-link" onClick={this.updateStart}>now</span>
 				<div className="control">
 				  <input
 					className="input"
@@ -96,6 +112,8 @@ class ActivityInput extends Component {
 			  </div>
 			  <div className="field">
 				<label className="label">End</label>
+				&nbsp;
+				<span className="btn btn-link" onClick={this.updateEnd}>now</span>
 				<div className="control">
 				  <input
 					className="input"

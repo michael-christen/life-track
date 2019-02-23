@@ -24,3 +24,12 @@ export function getDayOfWeek(date) {
   // const date = new Date(year, month, day);
   return (date.getDay() + 6) % 7;
 }
+
+
+export function padNumber(number, required_padding=2) {
+	let nString = number.toString();
+	while (nString.length < required_padding) {
+		nString = "0" + nString;
+	}
+	return nString;
+}
